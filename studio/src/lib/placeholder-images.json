@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "user-avatar",
+      "description": "User avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk1MTg4NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "doctor-avatar-1",
+      "description": "Doctor avatar 1",
+      "imageUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk0ODQ0OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "doctor-avatar-2",
+      "description": "Doctor avatar 2",
+      "imageUrl": "https://images.unsplash.com/photo-1612349316228-5942a9b489c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk0ODQ0OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "landing-hero",
+      "description": "Abstract shapes representing health and technology",
+      "imageUrl": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY5NTIxNTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    }
+  ]
+}

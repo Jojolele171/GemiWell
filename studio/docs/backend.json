@@ -1,0 +1,78 @@
+
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "The main user profile document storing health and role information.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "userCategory": { "type": "string", "enum": ["normal", "patient", "doctor"] },
+        "age": { "type": "string" },
+        "conditions": { "type": "string" },
+        "habits": { "type": "string" },
+        "diet": { "type": "string" },
+        "height": { "type": "string" },
+        "weight": { "type": "string" },
+        "hospital": { "type": "string" },
+        "badgeNumber": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "userCategory"]
+    },
+    "Message": {
+      "title": "Chat Message",
+      "description": "A single message in an AI health chat conversation.",
+      "type": "object",
+      "properties": {
+        "role": { "type": "string", "enum": ["user", "assistant"] },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["role", "content", "createdAt"]
+    },
+    "Report": {
+      "title": "Medical Report",
+      "description": "An AI-summarized medical report entry, potentially including structured data and original file.",
+      "type": "object",
+      "properties": {
+        "originalText": { "type": "string" },
+        "summary": { "type": "string" },
+        "confidence": { "type": "number" },
+        "dateLabel": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "type": { "type": "string", "enum": ["manual", "scan"] },
+        "fileDataUri": { "type": "string", "description": "Base64 encoded file data (image or PDF)." },
+        "structuredData": {
+          "type": "object",
+          "properties": {
+            "blood_sugar_level": { "type": "string" },
+            "hbA1c": { "type": "string" },
+            "cholesterol": { "type": "string" }
+          }
+        }
+      },
+      "required": ["originalText", "summary", "confidence", "createdAt"]
+    }
+  },
+  "auth": {
+    "providers": ["email"]
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Primary user document."
+    },
+    "/users/{userId}/messages/{messageId}": {
+      "schema": "Message",
+      "description": "Sub-collection for AI chat history."
+    },
+    "/users/{userId}/reports/{reportId}": {
+      "schema": "Report",
+      "description": "Sub-collection for analyzed medical reports."
+    }
+  }
+}
