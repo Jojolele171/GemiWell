@@ -144,17 +144,25 @@ Modular, serverless design for scalability and reliability.
 
 1. **Extract/Copy Files**: Copy all the files from this prototype into a new folder on your computer. 
 
-2. **Install Dependencies**:
+2. **Navigate to Folder**:
+   ```bash
+   cd studio
+   ```
+
+3. **Install Dependencies**:
    ```bash
    npm install
    ```
+4. **env API keys**:
+   Create a file named .env in your root folder and paste it API keys given, according to .env.example.
 
-4. **Run Development Server**:
+5. **Run Development Server**:
    ```bash
    npm run dev
    ```
 
-5. **Open the App**: Navigate to `http://localhost:3000`, or any other stated server in terminal.
+6. **Open the App**:
+   Navigate to `http://localhost:3000`, or any other stated server in terminal.
 
 --
 
