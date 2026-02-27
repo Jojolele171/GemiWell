@@ -132,6 +132,9 @@ Modular, serverless design for scalability and reliability.
 
 - Maintaining the Scope: features like a dedicated doctor’s view—were removed during development, as we saw it to be unneccesary.
 
+- API keys: I exposed my API on accident and when making it a public repo, I had to fix my API keys but I accidentally messed up the logic in the sign ups. I had to delete my previous keys and repo, while making a copy of a later commit into a new repo (GemiWellv2 so to speak).
+
+
 --
 
 # 7. Installation & Setup
